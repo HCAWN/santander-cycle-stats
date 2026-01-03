@@ -13,7 +13,7 @@ export default function Step2ScrapeDetails({
 
   useEffect(() => {
     // Load the script file dynamically
-    fetch("/scripts/fetch-ride-details.js")
+    fetch(`${import.meta.env.BASE_URL}scripts/fetch-ride-details.js`)
       .then((res) => res.text())
       .then((text) => {
         setScriptCode(text);

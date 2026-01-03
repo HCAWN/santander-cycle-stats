@@ -14,7 +14,7 @@ export default function Step1ScrapeSummaries({
 
   useEffect(() => {
     // Load the script file dynamically
-    fetch("/scripts/fetch-ride-summaries.js")
+    fetch(`${import.meta.env.BASE_URL}scripts/fetch-ride-summaries.js`)
       .then((res) => res.text())
       .then((text) => {
         // Inject the estimated ride count at the beginning (before the IIFE)
