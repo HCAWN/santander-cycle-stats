@@ -38,7 +38,9 @@ export default function AnalyticsShowcase() {
           >
             <div className="aspect-video bg-white overflow-hidden">
               <img
-                src={`/screenshots/screenshot_${screenshot.id}.jpg`}
+                src={`${import.meta.env.BASE_URL}screenshots/screenshot_${
+                  screenshot.id
+                }.jpg`}
                 alt={screenshot.title}
                 className="w-full h-full object-contain"
                 loading="lazy"
