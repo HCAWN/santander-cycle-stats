@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Minimal reset - Tailwind v4 includes Preflight */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
