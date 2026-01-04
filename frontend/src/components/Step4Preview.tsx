@@ -3,6 +3,7 @@ import type { Ride } from "../types/ride";
 import StatsCards from "./analytics/StatsCards";
 import JourneyTimeHistogram from "./analytics/JourneyTimeHistogram";
 import TimePatternChart from "./analytics/TimePatternChart";
+import RidesOverTimeHistogram from "./analytics/RidesOverTimeHistogram";
 import StationsTable from "./analytics/StationsTable";
 import RoutesTable, { type RouteStats } from "./analytics/RoutesTable";
 import RoutesMap from "./analytics/RoutesMap";
@@ -62,6 +63,8 @@ export default function Step4Preview({ rides }: Step4PreviewProps) {
       <JourneyTimeHistogram rides={rides} />
 
       <TimePatternChart rides={rides} />
+
+      <RidesOverTimeHistogram rides={rides} />
 
       {stationsLoading ? (
         <>
